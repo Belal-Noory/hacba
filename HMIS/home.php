@@ -8,10 +8,10 @@
   $TotalEmploId = mysqli_fetch_assoc($TotalEmp);
   $pandingleave = mysqli_query($db,"select count(LeaveStatus) as pleave from leavedetails where LeaveStatus='Pending'");
   $tpandingleave = mysqli_fetch_assoc($pandingleave);
-$result = mysqli_query($db, "SELECT * FROM project");
-$num_rows = mysqli_num_rows($result);
-$vacancy = mysqli_query($db, "SELECT * FROM vacancy");
-$res=mysqli_num_rows($vacancy);
+	$result = mysqli_query($db, "SELECT * FROM project");
+	$num_rows = mysqli_num_rows($result);
+	$vacancy = mysqli_query($db, "SELECT * FROM vacancy");
+	$res=mysqli_num_rows($vacancy);
 ?>
 
 <ol class="breadcrumb" style="margin: 10px 0px ! important;">

@@ -64,10 +64,10 @@ CREATE TABLE emp_experince(
 );
 
 -- Projects
-CREATE TABLE projetcs(
+CREATE TABLE projetc(
     PID INT PRIMARY KEY AUTO_INCREMENT,
-    sectorID INT REFERENCES sectors(SID) NULL,
-    donerID INT REFERENCES doners(DID) NULL,
+    sectorID INT REFERENCES sectors(SID),
+    donerID INT REFERENCES doners(DID),
     project_name VARCHAR(255) NOT NULL,
     abbbrivation VARCHAR(255),
     start_date DATE NOT NULL,
@@ -106,4 +106,9 @@ CREATE TABLE services(
     title VARCHAR(128) NOT NULL,
     details TEXT NOT NULL,
     icon VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE vacancy(
+    VID INT PRIMARY KEY AUTO_INCREMENT,
+    
 );

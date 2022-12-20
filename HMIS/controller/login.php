@@ -161,7 +161,7 @@
 		$Username = $GLOBALS["Username"];
 		$Password = $GLOBALS["Password"];
 		$mac = $GLOBALS["mac"];
-		$sql = mysqli_query($db,"select * from employee where Email='$Username' AND Password='$Password' AND MacAddress='$mac' AND StatusId=1 ");
+		$sql = mysqli_query($db,"select * from employee where Email='$Username' AND Password='$Password' AND StatusId=1 ");
 
 		if(mysqli_num_rows($sql) > 0)
 		{
